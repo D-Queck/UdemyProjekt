@@ -10,3 +10,5 @@ def warenkorb(request):
 
 def kasse(request):
     return render(request, 'shop/kasse.html')
+    
+    
