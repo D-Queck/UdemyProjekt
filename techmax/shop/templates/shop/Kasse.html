@@ -1,12 +1,16 @@
 {% extends 'shop/index.html' %}
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> a1e55d60fcd3a69728f825bcfa3c46dde77d6268
 {% block content %}
     <div class="row mt-4">
         <div class="col-4">
             <div class="shadow p-4">
                 <h3>Bestellübersicht</h3>
                 <hr>
+<<<<<<< HEAD
                 {% for artikel in artikels %}
                 <div class="d-flex">
                     <p class="p-2">{{artikel.menge}}</p>
@@ -18,6 +22,17 @@
                 <div class="d-flex">
                     <p class="me-auto fw-bold p-2">Menge: {{bestellung.get_gesamtmenge}}</p>
                     <p class="fw-bold p-2">Gesamtpreis: {{bestellung.get_gesamtpreis|floatformat:2}} €</p>
+=======
+                <div class="d-flex">
+                    <p class="p-2">1</p>
+                    <p class="me-auto p-2">Kopfhörer</p>
+                    <p class="p-2">99€</p>
+                </div>
+                <hr>
+                <div class="d-flex">
+                    <p class="me-auto fw-bold p-2">Menge: 1</p>
+                    <p class="fw-bold p-2">Gesamtpreis: 99€</p>
+>>>>>>> a1e55d60fcd3a69728f825bcfa3c46dde77d6268
                 </div>
             </div>
         </div>
@@ -37,8 +52,13 @@
                       <input type="text" class="form-control" id="inputAddress">
                     </div>
                     <div class="col-md-2">
+<<<<<<< HEAD
                         <label for="inputPlz" class="form-label">PLZ</label>
                         <input type="text" class="form-control" id="inputPlz">
+=======
+                        <label for="inputPLZ" class="form-label">PLZ</label>
+                        <input type="text" class="form-control" id="inputPLZ">
+>>>>>>> a1e55d60fcd3a69728f825bcfa3c46dde77d6268
                       </div>
                     <div class="col-md-5">
                       <label for="inputStadt" class="form-label">Stadt</label>
@@ -49,7 +69,11 @@
                         <input type="text" class="form-control" id="inputLand">
                       </div>
                     <div class="col-12 d-flex justify-content-end">
+<<<<<<< HEAD
                       <button type="submit" id="formular-button" class="btn btn-secondary">weiter</button>
+=======
+                      <button type="submit" id="formular-button" class="btn btn-primary">weiter</button>
+>>>>>>> a1e55d60fcd3a69728f825bcfa3c46dde77d6268
                     </div>
                   </form>
             </div>

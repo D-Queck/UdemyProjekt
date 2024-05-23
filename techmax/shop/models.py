@@ -29,6 +29,7 @@ class Bestellung(models.Model):
     def __str__(self):
         return str(self.id)
 
+<<<<<<< HEAD
     @property
     def get_gesamtpreis(self):
         bestellteartikels = self.bestellteartikel_set.all()
@@ -41,6 +42,8 @@ class Bestellung(models.Model):
         gesamtmenge = sum(artikel.menge for artikel in bestellteartikels)
         return gesamtmenge
 
+=======
+>>>>>>> a1e55d60fcd3a69728f825bcfa3c46dde77d6268
 class BestellteArtikel(models.Model):
     artikel = models.ForeignKey(Artikel, on_delete=models.SET_NULL, null=True, blank=True)
     bestellung = models.ForeignKey(Bestellung, on_delete=models.SET_NULL, null=True, blank=True)
@@ -50,11 +53,14 @@ class BestellteArtikel(models.Model):
     def __str__(self):
         return self.artikel.name
 
+<<<<<<< HEAD
     @property
     def get_summe(self):
         summe = self.artikel.preis * self.menge
         return summe
 
+=======
+>>>>>>> a1e55d60fcd3a69728f825bcfa3c46dde77d6268
 class Adresse(models.Model):
     kunde = models.ForeignKey(Kunde, on_delete=models.SET_NULL, null=True, blank=True)
     bestellung = models.ForeignKey(Bestellung, on_delete=models.SET_NULL, null=True, blank=True)
@@ -67,3 +73,9 @@ class Adresse(models.Model):
     def __str__(self):
         return self.adresse
 
+<<<<<<< HEAD
+=======
+
+
+    
+>>>>>>> a1e55d60fcd3a69728f825bcfa3c46dde77d6268
